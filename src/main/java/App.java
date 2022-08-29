@@ -88,11 +88,11 @@ public class App {
         }
 
         // метод для проверки открытости поля «Занятие», удаления текста из неё и ввода нового значения из параметра
-        public boolean waitForVisibilityActivityAndInputNewValues(String changed){
+        public boolean setForVisibilityActivityAndInputNewValues(String changed){
             driver.findElement(activity).isEnabled();
             driver.findElement(activity).clear();
             driver.findElement(activity).sendKeys(changed);
-            return false;
+
         }
 
             // метод для нажатия на кнопку сохранения профиля
